@@ -35,8 +35,7 @@ public class DoublyLinkedList {
 			temp.down = newContact;
 		}
 		// Make new letter section
-	
-		else if (helper.getNext() == null && newContact.getLastName().charAt(0) < helper.getData())  {
+			else if (helper.getNext() == null && newContact.getLastName().charAt(0) < helper.getData())  {
 			
 			// If new section value is smaller than head value
 			if(newContact.getLastName().charAt(0) < helper.getData()) {
@@ -127,7 +126,7 @@ public class DoublyLinkedList {
 	}
 	
 	/***
-	 * 
+	 * This function sorts letter section while adding it
 	 * @param s1: Contact's name
 	 * @param s2: Contact's last name
 	 * @param s3: Contact's phone number
