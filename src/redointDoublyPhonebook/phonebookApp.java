@@ -20,7 +20,11 @@ public class phonebookApp {
 		phonebook.cleanAdd("Miroslav", "Apostolovic", "0641975801");
 		phonebook.cleanAdd("Samir", "Haliti", "0600709003");
 		phonebook.cleanAdd("Test", "Testic", "0651112233");
+		Contact first = phonebook.cleanAdd("Ivan", "Mokanj", "0641493490");
+		Contact second = phonebook.cleanAdd("Luka", "Antic", "000");
+		phonebook.deleteContact(second);
 		phonebook.print();
+		
 		//phonebook.printSpecificSection('u');
 	}
 
