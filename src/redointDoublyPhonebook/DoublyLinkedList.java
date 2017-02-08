@@ -126,12 +126,20 @@ public class DoublyLinkedList {
 
 	}
 	
+	/***
+	 * 
+	 * @param s1: Contact's name
+	 * @param s2: Contact's last name
+	 * @param s3: Contact's phone number
+	 * @return: returns the contacts with values s1, s2 and s3
+	 */
+	
 	public Contact cleanAdd(String s1, String s2, String s3) {
 
 		Contact newContact = new Contact(s1, s2, s3);
 		letterSection helper = head;
 		
-		
+		// If phonebook is empty
 		if(head == null) {
 			letterSection newSection = new letterSection(newContact.getLastName().charAt(0));
 			head = newSection;
@@ -165,6 +173,7 @@ public class DoublyLinkedList {
 					tempCont.down = newContact;
 				}
 			
+				// searching for the right place for the section and inserting contact
 			} else {
 				
 				
